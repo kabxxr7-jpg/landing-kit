@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>hero-app source</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1600px; height: 1200px; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #0a1f24;
+    background:
+      radial-gradient(900px 700px at 90% 0%, rgba(255,255,255,.22), transparent 60%),
+      radial-gradient(800px 700px at 0% 100%, rgba(5,60,68,.55), transparent 60%),
+      linear-gradient(135deg, #0b6b74 0%, #0f8f99 55%, #4cc3cb 100%);
+    position: relative; overflow: hidden;
+  }
+  .win {
+    position: absolute; left: 64px; top: 84px; width: 1472px; height: 1032px;
+    background: #fff; border-radius: 30px;
+    box-shadow: 0 60px 120px rgba(2,36,42,.45), 0 0 0 1px rgba(255,255,255,.4);
+    overflow: hidden; display: grid; grid-template-rows: 78px 1fr;
+  }
+  .bar { display: flex; align-items: center; gap: 14px; padding: 0 30px; border-bottom: 1px solid #e3eeed; background: #f6faf9; }
+  .dot { width: 16px; height: 16px; border-radius: 50%; background: #cddcdb; }
+  .bar h1 { font-size: 22px; font-weight: 700; margin-left: 14px; }
+  .bar .pill { margin-left: auto; font-size: 18px; font-weight: 600; background: #0b6b74; color: #fff; padding: 11px 22px; border-radius: 999px; }
+  .body { display: grid; grid-template-columns: 420px 1fr; min-height: 0; }
+  aside { border-right: 1px solid #e3eeed; padding: 30px 28px; background: #fbfdfd; }
+  aside h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .09em; color: #4a6168; margin-bottom: 18px; }
+  .slot { border: 2px solid #e3eeed; border-radius: 18px; padding: 20px 22px; margin-bottom: 16px; background: #fff; }
+  .slot b { display: block; font-size: 24px; }
+  .slot span { display: block; font-size: 17px; color: #4a6168; margin-top: 6px; }
+  .slot.best { border-color: #0b6b74; background: #e6f4f4; }
+  .slot .tag { display: inline-block; margin-top: 0; font-size: 14px; font-weight: 700; color: #0b6b74; background: #cdeaec; padding: 4px 11px; border-radius: 999px; margin-bottom: 10px; }
+  .people { display: flex; margin-top: 26px; }
+  .av { width: 52px; height: 52px; border-radius: 50%; border: 3px solid #fbfdfd; margin-right: 10px; display: grid; place-items: center; font-weight: 700; font-size: 18px; color: #fff; }
+  .note { margin-top: 38px; font-size: 17px; line-height: 1.5; color: #4a6168; }
+  .note strong { color: #0a1f24; }
+  main { padding: 26px 30px 30px; display: grid; grid-template-rows: 54px 1fr; min-height: 0; }
+  .days { display: grid; grid-template-columns: 70px repeat(5, 1fr); font-size: 18px; font-weight: 700; color: #34494f; }
+  .days div { padding-left: 10px; }
+  .grid { position: relative; display: grid; grid-template-columns: 70px repeat(5, 1fr); border-top: 1px solid #e3eeed; }
+  .grid .col { border-left: 1px solid #edf4f3; position: relative; }
+  .times { position: relative; font-size: 15px; color: #6a7f85; }
+  .times span { position: absolute; left: 0; transform: translateY(-50%); }
+  .line { position: absolute; left: 0; right: 0; border-top: 1px solid #edf4f3; }
+  .ev { position: absolute; left: 8px; right: 8px; border-radius: 12px; padding: 10px 12px; font-size: 16px; font-weight: 600; line-height: 1.25; color: #0a1f24; }
+  .ev small { display: block; font-weight: 500; font-size: 14px; opacity: .8; margin-top: 2px; }
+  .e1 { background: #d6ecef; border-left: 5px solid #0b6b74; }
+  .e2 { background: #fde8d3; border-left: 5px solid #c2570c; }
+  .e3 { background: #e5e2fa; border-left: 5px solid #5b4bc4; }
+  .focus { background: repeating-linear-gradient(135deg, #f1f6f6, #f1f6f6 10px, #e8f0f0 10px, #e8f0f0 20px); border: 1px dashed #b9cfcf; color: #4a6168; }
+  .prop { background: #fff; border: 3px dashed #0b6b74; color: #0b6b74; box-shadow: 0 10px 30px rgba(11,107,116,.25); }
+</style>
+</head>
+<body>
+<div class="win">
+  <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><h1>Design review · week of 9 March</h1><span class="pill">Book it</span></div>
+  <div class="body">
+    <aside>
+      <h2>Suggested times</h2>
+      <div class="slot best"><span class="tag">Best fit</span><b>Tue 10:30 – 11:00</b><span>No focus blocks broken · all 5 free</span></div>
+      <div class="slot"><b>Wed 14:00 – 14:30</b><span>1 focus block shortened</span></div>
+      <div class="slot"><b>Thu 09:30 – 10:00</b><span>Early for one guest (UTC+8)</span></div>
+      <div class="people">
+        <div class="av" style="background:#0b6b74">MO</div><div class="av" style="background:#c2570c">JK</div><div class="av" style="background:#5b4bc4">AL</div><div class="av" style="background:#2f7d4f">SR</div><div class="av" style="background:#8a5a00">TD</div>
+      </div>
+      <p class="note"><strong>5 calendars read.</strong> Focus time, travel buffers and time zones are weighed before a slot is offered.</p>
+    </aside>
+    <main>
+      <div class="days"><div></div><div>Mon 9</div><div>Tue 10</div><div>Wed 11</div><div>Thu 12</div><div>Fri 13</div></div>
+      <div class="grid" id="grid">
+        <div class="times" id="times"></div>
+        <div class="col" id="c1"></div><div class="col" id="c2"></div><div class="col" id="c3"></div><div class="col" id="c4"></div><div class="col" id="c5"></div>
+      </div>
+    </main>
+  </div>
+</div>
+<script>
+  // 9:00 to 17:00, each hour is 96px tall
+  var H = 96, START = 9;
+  var grid = document.getElementById('grid');
+  var times = document.getElementById('times');
+  for (var h = START; h <= 17; h++) {
+    var s = document.createElement('span'); s.style.top = ((h - START) * H) + 'px'; s.textContent = (h < 10 ? '0' : '') + h + ':00'; times.appendChild(s);
+    var l = document.createElement('div'); l.className = 'line'; l.style.top = ((h - START) * H) + 'px'; l.style.left = '70px'; grid.appendChild(l);
+  }
+  function ev(col, cls, from, to, title, sub) {
+    var d = document.createElement('div'); d.className = 'ev ' + cls;
+    d.style.top = ((from - START) * H + 2) + 'px'; d.style.height = ((to - from) * H - 4) + 'px';
+    d.innerHTML = title + (sub ? '<small>' + sub + '</small>' : '');
+    document.getElementById('c' + col).appendChild(d);
+  }
+  ev(1, 'e1', 9.5, 10.5, 'Standup', '30 min');
+  ev(1, 'focus', 11, 13, 'Focus time', 'Protected');
+  ev(1, 'e2', 14, 15.5, 'Client call', 'Fjordline');
+  ev(2, 'e3', 9, 10, 'Planning', 'Team');
+  ev(2, 'prop', 10.5, 11, 'Design review', '');
+  ev(2, 'focus', 13, 15.5, 'Focus time', 'Protected');
+  ev(3, 'e1', 9.5, 10.5, 'Standup', '30 min');
+  ev(3, 'e2', 11, 12, '1:1 · Maren', '');
+  ev(3, 'focus', 14.5, 16.5, 'Focus time', 'Protected');
+  ev(4, 'e3', 10, 11.5, 'Roadmap', 'Product');
+  ev(4, 'e1', 13, 14, 'Standup (async)', '');
+  ev(4, 'e2', 15, 16, 'Demo prep', '');
+  ev(5, 'focus', 9, 12, 'Focus time', 'Protected');
+  ev(5, 'e1', 13.5, 14.5, 'Retro', 'Team');
+</script>
+</body>
+</html>

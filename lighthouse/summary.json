@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-31",
+  "lighthouseVersion": "13.6.0",
+  "runs": 5,
+  "results": [
+    {
+      "page": "/",
+      "device": "mobile",
+      "reported": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "fcp": 767.7158999999999,
+          "lcp": 767.7158999999999,
+          "tbt": 28,
+          "cls": 0,
+          "speedIndex": 767.7158999999999
+        },
+        "transferKiB": 236
+      },
+      "allRuns": [
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        }
+      ],
+      "failedAttempts": 0,
+      "failures": [],
+      "notPerfect": [
+        "max-potential-fid=0.94",
+        "interactive=0.99",
+        "unused-javascript=0.5",
+        "legacy-javascript-insight=0.5",
+        "network-dependency-tree-insight=0",
+        "render-blocking-insight=0.5"
+      ]
+    },
+    {
+      "page": "/",
+      "device": "desktop",
+      "reported": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "fcp": 212.1386,
+          "lcp": 492.1386,
+          "tbt": 0,
+          "cls": 0,
+          "speedIndex": 212.1386
+        },
+        "transferKiB": 231
+      },
+      "allRuns": [
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        }
+      ],
+      "failedAttempts": 0,
+      "failures": [],
+      "notPerfect": [
+        "unused-javascript=0",
+        "legacy-javascript-insight=0",
+        "network-dependency-tree-insight=0",
+        "render-blocking-insight=0.5"
+      ]
+    },
+    {
+      "page": "/case-study",
+      "device": "mobile",
+      "reported": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "fcp": 764.0218,
+          "lcp": 764.0218,
+          "tbt": 13,
+          "cls": 0,
+          "speedIndex": 764.0218
+        },
+        "transferKiB": 214
+      },
+      "allRuns": [
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        }
+      ],
+      "failedAttempts": 0,
+      "failures": [],
+      "notPerfect": [
+        "max-potential-fid=0.99",
+        "unused-javascript=0.5",
+        "legacy-javascript-insight=0.5",
+        "network-dependency-tree-insight=0",
+        "render-blocking-insight=0"
+      ]
+    },
+    {
+      "page": "/case-study",
+      "device": "desktop",
+      "reported": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "fcp": 218.26260000000002,
+          "lcp": 218.26260000000002,
+          "tbt": 0,
+          "cls": 0,
+          "speedIndex": 218.26260000000002
+        },
+        "transferKiB": 214
+      },
+      "allRuns": [
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        }
+      ],
+      "failedAttempts": 0,
+      "failures": [],
+      "notPerfect": [
+        "unused-javascript=0.5",
+        "legacy-javascript-insight=0.5",
+        "network-dependency-tree-insight=0",
+        "render-blocking-insight=0.5"
+      ]
+    }
+  ]
+}

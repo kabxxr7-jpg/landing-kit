@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="A week grid with one highlighted best-fit slot between protected focus blocks">
+  <style>
+    :root{--bg:#e6f2f2;--card:#ffffff;--line:#c9dddd;--ink:#0a1f24;--muted:#44585e;--brand:#0b6b74;--soft:#cdeaec;--warm:#fde8d3;--warmline:#c2570c;--hatch:#e8f0f0}
+    @media (prefers-color-scheme: dark){:root{--bg:#0c2a30;--card:#0f3039;--line:#244a53;--ink:#e9f4f5;--muted:#a7bec3;--brand:#4fd1dc;--soft:#17505a;--warm:#4a3220;--warmline:#f0a060;--hatch:#16404a}}
+    text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  </style>
+  <rect width="640" height="480" rx="28" fill="var(--bg)"/>
+  <rect x="40" y="40" width="560" height="400" rx="20" fill="var(--card)" stroke="var(--line)" stroke-width="2"/>
+  <g fill="var(--muted)" font-size="15" font-weight="700">
+    <text x="118" y="82">Mon</text><text x="214" y="82">Tue</text><text x="310" y="82">Wed</text><text x="406" y="82">Thu</text><text x="502" y="82">Fri</text>
+  </g>
+  <g stroke="var(--line)" stroke-width="1.5">
+    <path d="M100 100H580M100 160H580M100 220H580M100 280H580M100 340H580M100 400H580"/>
+    <path d="M100 100V420M196 100V420M292 100V420M388 100V420M484 100V420"/>
+  </g>
+  <g fill="var(--hatch)" stroke="var(--line)" stroke-dasharray="5 4">
+    <rect x="106" y="164" width="84" height="112" rx="10"/><rect x="202" y="284" width="84" height="112" rx="10"/><rect x="394" y="104" width="84" height="112" rx="10"/><rect x="490" y="224" width="84" height="112" rx="10"/>
+  </g>
+  <g fill="var(--soft)" stroke="var(--brand)" stroke-width="3">
+    <rect x="106" y="104" width="84" height="52" rx="10"/><rect x="298" y="164" width="84" height="52" rx="10"/><rect x="394" y="284" width="84" height="52" rx="10"/>
+  </g>
+  <g fill="var(--warm)" stroke="var(--warmline)" stroke-width="3"><rect x="298" y="284" width="84" height="52" rx="10"/><rect x="490" y="104" width="84" height="52" rx="10"/></g>
+  <rect x="202" y="164" width="84" height="52" rx="10" fill="var(--card)" stroke="var(--brand)" stroke-width="4" stroke-dasharray="8 6"/>
+  <text x="244" y="196" text-anchor="middle" font-size="14" font-weight="800" fill="var(--brand)">Best fit</text>
+  <g fill="var(--muted)" font-size="13"><text x="56" y="136">09:00</text><text x="56" y="196">10:00</text><text x="56" y="256">11:00</text><text x="56" y="316">12:00</text><text x="56" y="376">13:00</text></g>
+</svg>

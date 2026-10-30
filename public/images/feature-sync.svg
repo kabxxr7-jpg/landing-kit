@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Four people's availability bars with the shared overlap highlighted">
+  <style>
+    :root{--bg:#e6f2f2;--card:#ffffff;--line:#c9dddd;--ink:#0a1f24;--muted:#44585e;--brand:#0b6b74;--soft:#cdeaec;--warm:#fde8d3;--warmline:#c2570c;--hatch:#e8f0f0}
+    @media (prefers-color-scheme: dark){:root{--bg:#0c2a30;--card:#0f3039;--line:#244a53;--ink:#e9f4f5;--muted:#a7bec3;--brand:#4fd1dc;--soft:#17505a;--warm:#4a3220;--warmline:#f0a060;--hatch:#16404a}}
+    text{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  </style>
+  <rect width="640" height="480" rx="28" fill="var(--bg)"/>
+  <rect x="40" y="40" width="560" height="400" rx="20" fill="var(--card)" stroke="var(--line)" stroke-width="2"/>
+  <rect x="304" y="64" width="116" height="352" rx="14" fill="var(--soft)" stroke="var(--brand)" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="362" y="88" text-anchor="middle" font-size="15" font-weight="800" fill="var(--brand)">Shared</text>
+  <g font-size="16" font-weight="700" fill="var(--ink)">
+    <text x="70" y="140">Maren</text><text x="70" y="210">Jonas</text><text x="70" y="280">Aiko</text><text x="70" y="350">Sam</text>
+  </g>
+  <g fill="var(--brand)">
+    <rect x="160" y="118" width="300" height="30" rx="15"/>
+    <rect x="220" y="188" width="320" height="30" rx="15"/>
+    <rect x="190" y="258" width="250" height="30" rx="15"/>
+    <rect x="250" y="328" width="300" height="30" rx="15"/>
+  </g>
+  <g fill="var(--muted)" font-size="13"><text x="160" y="396">08:00</text><text x="268" y="396">11:00</text><text x="376" y="396">14:00</text><text x="484" y="396">17:00</text></g>
+</svg>
