@@ -166,8 +166,9 @@ const date = new Date().toLocaleDateString("en-CA"); // local date, YYYY-MM-DD
 const ms = (n) => (n === undefined ? "n/a" : `${(n / 1000).toFixed(2)} s`);
 const lines = [];
 lines.push("# Lighthouse results", "");
-lines.push(`Measured ${date} with Lighthouse ${lighthouseVersion} on a local production build (\`next build\` then \`next start\`), Chrome headless, one machine.`);
-lines.push("These are lab numbers from a localhost server, not field data and not a deployed URL. Lighthouse varies run to run, so each cell is the median run of " + RUNS + ".", "");
+const isLocal = /^https?:\/\/(localhost|127\.0\.0\.1)/.test(BASE_URL);
+lines.push(isLocal ? `Measured ${date} with Lighthouse ${lighthouseVersion} on a local production build (\`next build\` then \`next start\`), Chrome headless, one machine.` : `Measured ${date} with Lighthouse ${lighthouseVersion} against the deployed site ${BASE_URL} (Vercel production), Chrome headless, run from one machine.`);
+lines.push((isLocal ? "These are lab numbers from a localhost server, not field data and not a deployed URL." : "These are lab numbers measured over the public internet from one machine, not field data from real visitors.") + " Lighthouse varies run to run, so each cell is the median run of " + RUNS + ".", "");
 lines.push("Command (this is what `npm run lighthouse` runs for each row):", "");
 lines.push("```bash");
 lines.push(`CHROME_PATH="${CHROME_PATH}" npx lighthouse ${BASE_URL}<path> --output=json --output-path=lighthouse/<page>-<device>.json --chrome-flags="--headless=new --no-sandbox" --quiet [--preset=desktop]`);

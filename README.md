@@ -2,11 +2,11 @@
 
 A responsive, accessible marketing landing page in Next.js and Tailwind CSS, with a long-form case-study page, built as a starting point for "turn this design into a fast landing page" jobs. Everything on it is for a fictional product (Tidepool, a scheduling tool), so there is nothing to confuse with a real client.
 
-**Status:** a proof project. It was tested on one machine (macOS, Chrome only) and measured on a local production build, not on a deployed URL. See "Limits" for what was and was not checked.
+**Status:** a proof project. It was tested on one machine (macOS, Chrome only) and measured both on a local production build and on the deployed site. See "Limits" for what was and was not checked.
 
 ## Measured results
 
-Lighthouse 13.6.0, local production build, median of five runs for each page and device, 2026-10-31. Full table, every run, the command, and the reports are in [LIGHTHOUSE.md](LIGHTHOUSE.md) and [lighthouse/](lighthouse/).
+Lighthouse 13.6.0, measured against the deployed site https://landing-kit-flame.vercel.app (median of five runs for each page and device, 2026-10-31; an earlier local-build run also scored 100 in all 20 runs). Full table, every run, the command, and the reports are in [LIGHTHOUSE.md](LIGHTHOUSE.md) and [lighthouse/](lighthouse/).
 
 | Page | Device | Performance | Accessibility | Best practices | SEO | LCP | TBT | CLS |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -79,5 +79,5 @@ Decisions worth knowing before you reuse it:
 - **Built without a Figma file.** The layout was designed in code, so this repo shows the build, testing and measurement process, not pixel-matching to someone else's design. The checklist describes how that part is done on a real job.
 - **The two PNGs are not real product screenshots.** They are rendered from HTML mock-ups in `design-src/`.
 - **One machine, one browser engine.** Everything was run on one Mac with Chrome 156 (Chromium) and Node 25.2.1. It was not tested in Safari or Firefox, on a real phone, or with a screen reader beyond Chrome's accessibility tree and axe. Scroll-driven reveals only run where the browser supports them (Chromium, recent Safari); elsewhere the page is simply static.
-- **Lab numbers on localhost.** Lighthouse scores come from Lighthouse's simulated mobile throttling against `next start` on the same machine, not a deployed site and not field data from real visitors. They vary run to run (the five-run spread is in LIGHTHOUSE.md), and the machine was busy with other work during some runs. A deployed site over HTTP/2 and a CDN would behave differently, and could be better or worse.
+- **Lab numbers, not field data.** Lighthouse scores come from Lighthouse's simulated mobile throttling, run from one machine against the deployed site, not field data from real visitors. They vary run to run: one of five mobile runs of the home page scored 70 (see LIGHTHOUSE.md), and the machine was busy with other work during some runs.
 - **Not audited:** keyboard and screen-reader behaviour on iOS, print styles, right-to-left text, very old browsers.

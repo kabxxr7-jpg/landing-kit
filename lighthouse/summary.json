@@ -14,17 +14,17 @@
           "seo": 100
         },
         "metrics": {
-          "fcp": 767.7158999999999,
-          "lcp": 767.7158999999999,
+          "fcp": 988.769,
+          "lcp": 988.769,
           "tbt": 28,
           "cls": 0,
-          "speedIndex": 767.7158999999999
+          "speedIndex": 1835.3480999966619
         },
-        "transferKiB": 236
+        "transferKiB": 231
       },
       "allRuns": [
         {
-          "performance": 100,
+          "performance": 70,
           "accessibility": 100,
           "best-practices": 100,
           "seo": 100
@@ -57,12 +57,11 @@
       "failedAttempts": 0,
       "failures": [],
       "notPerfect": [
-        "max-potential-fid=0.94",
-        "interactive=0.99",
+        "max-potential-fid=0.98",
         "unused-javascript=0.5",
         "legacy-javascript-insight=0.5",
         "network-dependency-tree-insight=0",
-        "render-blocking-insight=0.5"
+        "render-blocking-insight=0"
       ]
     },
     {
@@ -76,13 +75,13 @@
           "seo": 100
         },
         "metrics": {
-          "fcp": 212.1386,
-          "lcp": 492.1386,
+          "fcp": 272.25800000000004,
+          "lcp": 432.25800000000004,
           "tbt": 0,
           "cls": 0,
-          "speedIndex": 212.1386
+          "speedIndex": 316.5465556099673
         },
-        "transferKiB": 231
+        "transferKiB": 227
       },
       "allRuns": [
         {
@@ -119,8 +118,8 @@
       "failedAttempts": 0,
       "failures": [],
       "notPerfect": [
-        "unused-javascript=0",
-        "legacy-javascript-insight=0",
+        "unused-javascript=0.5",
+        "legacy-javascript-insight=0.5",
         "network-dependency-tree-insight=0",
         "render-blocking-insight=0.5"
       ]
@@ -136,13 +135,13 @@
           "seo": 100
         },
         "metrics": {
-          "fcp": 764.0218,
-          "lcp": 764.0218,
+          "fcp": 927.088,
+          "lcp": 927.088,
           "tbt": 13,
           "cls": 0,
-          "speedIndex": 764.0218
+          "speedIndex": 927.088
         },
-        "transferKiB": 214
+        "transferKiB": 213
       },
       "allRuns": [
         {
@@ -197,13 +196,13 @@
           "seo": 100
         },
         "metrics": {
-          "fcp": 218.26260000000002,
-          "lcp": 218.26260000000002,
+          "fcp": 284.9045,
+          "lcp": 284.9045,
           "tbt": 0,
           "cls": 0,
-          "speedIndex": 218.26260000000002
+          "speedIndex": 291.9579708325108
         },
-        "transferKiB": 214
+        "transferKiB": 213
       },
       "allRuns": [
         {
